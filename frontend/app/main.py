@@ -9,7 +9,7 @@ def pagecreate():
   request_ip = request.remote_addr
   dashed_ip = request_ip.replace(".", "-")
   try:
-    r = requests.get(f'ip-by-geo.themcilroy.com/{dashed_ip}', timeout=0.01)
+    r = requests.get(f'http://ip-by-geo.themcilroy.com/{dashed_ip}', timeout=0.01)
     response = r.json()
     time = str(response['time'])
   except:

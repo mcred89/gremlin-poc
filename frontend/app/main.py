@@ -12,7 +12,7 @@ def pagecreate():
     r = requests.get(f'ip-by-geo.themcilroy.com/{dashed_ip}', timeout=0.01)
     response = r.json()
     time = str(response['time'])
-  except Exception as e:
+  except:
     time = "Hammer Time?!"
   return render_template('index.html', time=time)
 

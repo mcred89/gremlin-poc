@@ -5,6 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def pagecreate():
+  request_ip = request.remote_addr
+  dashed_ip = request_ip.replace(".", "-")
   time = "Hammer Time?!"
   return render_template('index.html', time=time)
 

@@ -37,7 +37,7 @@ gremlin init
 ### ip-by-geo
 
 - Takes /{ip-seperated-with-dashes}
-- Returns `{time: "HH:MM:SS"}` with your local times, based on your IP's TZ.
+- Returns `{time: "HH:MM:SS"}` with your local time, based on your IP's TZ.
 
 Build commands:
 

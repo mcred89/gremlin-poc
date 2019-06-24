@@ -36,7 +36,7 @@ gremlin init
 
 ### ip-by-geo
 
-- Takes /{ip-seperated-with-dashes}
+- Call with /{ip-seperated-with-dashes} as your path.
 - Returns `{time: "HH:MM:SS"}` with your local time, based on your IP's TZ.
 
 Build commands:
